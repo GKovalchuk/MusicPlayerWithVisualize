@@ -1,0 +1,25 @@
+<div class="player__container">
+	<div class="player__track-controls_container">
+		<button class="player__track-controls" id="prev">
+			<img src="/assets/img/prev.png" alt="next">
+		</button>
+		<p class="player__track-controls_current-track" id="track-name"></p>
+		<button class="player__track-controls" id="loop">
+			<img src="/assets/img/shuffle.png" alt="shuffle">
+		</button>
+		<button class="player__track-controls" id="shuffle">
+			<img src="/assets/img/shuffle.png" alt="shuffle">
+		</button>
+		<button class="player__track-controls" id="next">
+			<img src="/assets/img/next.png" alt="next">
+		</button>
+	</div>
+
+	<audio id="audio" class="player" controls preload="metadata">
+	</audio>
+
+	<canvas class="player__canvas" id="canvas">
+		Ваш браузер не поддерживает canvas. Попробуйте
+		обновить или сменить браузер
+	</canvas>
+</div>

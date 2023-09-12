@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru" id="html">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link type="image/x-icon" href="./favicon.ico" rel="shortcut icon">
+	<link type="Image/x-icon" href="./favicon.ico" rel="icon">
+	<link rel="stylesheet" href="./assets/styles/style.min.css?_v=20230913020035" />
+	<link href="https://fonts.cdnfonts.com/css/impact?_v=20230913020035" rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/arial?_v=20230913020035" rel="stylesheet">
+	<title>Audio Vis</title>
+</head>
+
+<body id="body">
+	<header id="header">AUDIO_VIS</header>
+
+	<main class="player__wrapper">
+		<div class="playlist__wrapper" id="placeholder">
+	<div class="playlist__container" id="playlistContainer"></div>
+	<div class="playlist__add-area">
+		<span id="spanClickToSelect">Click to add composition</span>
+		<input id="playlist__input" class="playlist__input" type="file"
+			accept="audio/*" multiple />
+	</div>
+
+</div>
+		<div class="player__container">
+	<div class="player__track-controls_container">
+		<button class="player__track-controls" id="prev">
+			<img src="/assets/img/prev.png" alt="next">
+		</button>
+		<p class="player__track-controls_current-track" id="track-name"></p>
+		<button class="player__track-controls" id="loop">
+			<img src="/assets/img/shuffle.png" alt="shuffle">
+		</button>
+		<button class="player__track-controls" id="shuffle">
+			<img src="/assets/img/shuffle.png" alt="shuffle">
+		</button>
+		<button class="player__track-controls" id="next">
+			<img src="/assets/img/next.png" alt="next">
+		</button>
+	</div>
+
+	<audio id="audio" class="player" controls preload="metadata">
+	</audio>
+
+	<canvas class="player__canvas" id="canvas">
+		Ваш браузер не поддерживает canvas. Попробуйте
+		обновить или сменить браузер
+	</canvas>
+</div>
+	</main>
+
+	<script src="js/app.min.js?_v=20230913020035"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+.playlist {
+	&__wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+		width: 100%;
+		height: fit-content;
+		max-height: 60vh;
+
+		border-bottom: 0.0625rem solid $primary-color;
+		border-radius: 0.5rem;
+		background-color: #fff;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: fit-content;
+		border-bottom: 0.0625rem solid $primary-color;
+		border-radius: 0.5rem;
+		background-color: #fff;
+		overflow: auto;
+		&_btn {
+			min-height: 2rem;
+			padding: 0.25rem 0.5rem;
+			border-bottom: 0.0625rem solid $primary-color;
+			background: none;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			transition: filter 0.05s linear;
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			&--active,
+			&:hover {
+				filter: drop-shadow(0px 0px 0.125rem #dddddd);
+			}
+			&:active {
+				filter: drop-shadow(0px 0px 0.125rem $gray);
+			}
+		}
+	}
+
+	&__add-area {
+		position: relative;
+		display: flex;
+		min-height: 2.25rem;
+		background-color: #fff;
+		border-radius: 0.5rem;
+
+		& span {
+			display: block;
+			width: 100%;
+			text-align: center;
+			margin: auto;
+			font-size: 1rem;
+		}
+
+		& input {
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			cursor: pointer;
+		}
+	}
+}
