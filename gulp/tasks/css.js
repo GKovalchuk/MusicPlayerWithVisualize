@@ -1,7 +1,4 @@
-import rename from "gulp-rename";
-import concatCss from "gulp-concat-css";
 import autoprefixer from "gulp-autoprefixer"; // автопрефиксер
-import gcmq from "gulp-group-css-media-queries"; // группировка медиа запросов
 
 export const css = () => {
 	return app.gulp
@@ -14,18 +11,11 @@ export const css = () => {
 				})
 			)
 		)
-		.pipe(concatCss("style.css"))
 		.pipe(
 			autoprefixer({
 				grid: true,
 				overrideBrowserslist: ["last 3 versions"],
 				cascade: true,
-			})
-		)
-		.pipe(gcmq())
-		.pipe(
-			rename({
-				extname: ".min.css",
 			})
 		)
 		.pipe(app.gulp.dest(app.path.build.css))

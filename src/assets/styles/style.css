@@ -1,0 +1,40 @@
+@import url("/assets/styles/variables.css");
+@import url("/assets/styles/normalize.css");
+@import url("/assets/styles/playlist.css");
+@import url("/assets/styles/player.css");
+
+* {
+	box-sizing: border-box;
+
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	text-align: left;
+	letter-spacing: 0.0625rem;
+	color: var(--primary-color);
+	outline: transparent;
+}
+
+body {
+	margin: 0 2rem;
+
+	background-color: var(--bg-light);
+}
+
+header {
+	max-height: 10vh;
+
+	padding: 1.5rem 0 2rem;
+
+	font-size: 2rem;
+	text-align: left;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	letter-spacing: 0.25rem;
+}
+
+@media (min-width: 1168px) {
+	body {
+		width: 68.75rem;
+
+		margin: 0 auto;
+	}
+}

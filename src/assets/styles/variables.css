@@ -1,0 +1,10 @@
+:root {
+	--primary-color: #333;
+	--bg-light: #fff;
+	--accent-color: #f87c56;
+	--accent-color--darker: #a13c1c;
+	--gray: #999999;
+	--gray--darker: #666666;
+	--border--main: 0.0625rem solid var(--primary-color);
+	--border-radius--main: 0.5rem;
+}
